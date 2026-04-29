@@ -614,7 +614,51 @@
 
     .experience-list {
       display: grid;
-      gap: 14px;
+      gap: 22px;
+    }
+
+    .role-stack {
+      position: relative;
+      display: grid;
+      gap: 18px;
+      padding-top: 42px;
+      padding-left: 28px;
+    }
+
+    .role-stack-label {
+      position: absolute;
+      top: 0;
+      left: 28px;
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(0, 113, 227, 0.08);
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .role-stack::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 82px;
+      bottom: 28px;
+      width: 2px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(0, 113, 227, 0.28), rgba(0, 113, 227, 0.08));
+      z-index: 0;
+    }
+
+    .role-stack .role {
+      position: relative;
+      z-index: 1;
+    }
+
+    .role-stack .role::before {
+      display: none;
     }
 
     .role {
@@ -1302,81 +1346,112 @@
           <article class="role">
             <div class="role-meta">
               <img src="assets/cycn3.png" alt="Cync3 logo" class="company-logo logo-wide" />
-              <strong>Cync3</strong>
-              Melbourne, Victoria<br />
+              <strong>Cync³ Supply Chain Consulting</strong>
+              Melbourne, Victoria, Australia<br />
               Business Analyst<br />
               Apr 2026 — Present
             </div>
             <div>
               <h3>Business Analyst</h3>
               <ul>
-                <li>Work with business stakeholders to understand operational needs, clarify requirements, and translate problems into practical technology and process solutions.</li>
-                <li>Support analysis across systems, data, workflows, and reporting to improve business visibility and decision-making.</li>
-                <li>Bridge the gap between technical teams and business users through clear documentation, communication, and solution-focused delivery.</li>
+                <li>Work across consulting, analytics, and business improvement initiatives to support client delivery, commercial insights, and decision-making.</li>
+                <li>Develop dashboards, data models, reports, and analytical tools to support client and internal decision-making.</li>
+                <li>Analyse operational, commercial, and supply chain data to identify performance and efficiency improvement opportunities.</li>
+                <li>Support cost-to-serve modelling, benchmarking, scenario analysis, and business case development.</li>
+                <li>Translate complex datasets into clear insights for reports, presentations, workshops, and client recommendations.</li>
               </ul>
             </div>
           </article>
 
-          <article class="role">
-            <div class="role-meta">
-              <img src="assets/opal.jpeg" alt="Opal logo" class="company-logo logo-wide" />
-              <strong>Opal</strong>
-              Melbourne, Victoria<br />
-              Data Analyst<br />
-              Feb 2025 — Apr 2026
-            </div>
-            <div>
-              <h3>Data Analyst</h3>
-              <ul>
-                <li>Work with SAP and BW extracts to validate, integrate, and prepare reliable datasets for business reporting.</li>
-                <li>Use Snowflake for analytics, query optimisation, data modelling, and workflow automation.</li>
-                <li>Collaborate across SAP, Matillion, QlikView, and Power BI environments to deliver business-ready insights.</li>
-              </ul>
-            </div>
-          </article>
+          <div class="role-stack">
+            <div class="role-stack-label">Career progression at Opal</div>
+
+            <article class="role">
+              <div class="role-meta">
+                <img src="assets/opal.jpeg" alt="Opal logo" class="company-logo logo-square" />
+                <strong>Opal</strong>
+                Melbourne, Victoria<br />
+                Data Analyst<br />
+                Feb 2025 — Apr 2026
+              </div>
+              <div>
+                <h3>Data Analyst</h3>
+                <ul>
+                  <li>Work with SAP and BW extracts to validate, integrate, and prepare reliable datasets for business reporting.</li>
+                  <li>Use Snowflake for analytics, query optimisation, data modelling, and workflow automation.</li>
+                  <li>Collaborate across SAP, Matillion, QlikView, and Power BI environments to deliver business-ready insights.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role-meta">
+                <img src="assets/opal.jpeg" alt="Opal logo" class="company-logo logo-square" />
+                <strong>Opal</strong>
+                Melbourne, Victoria<br />
+                Data Analyst Intern<br />
+                Oct 2024 — Jan 2025
+              </div>
+              <div>
+                <h3>Data Analyst Intern</h3>
+                <ul>
+                  <li>Analysed and processed 10M+ records using Matillion, SAP ERP, QlikView, and Power BI.</li>
+                  <li>Optimised ETL workflows and data pipelines in Matillion and SQL, automated Python-based data processes, and improved processing efficiency.</li>
+                  <li>Improved retrieval speed by approximately 40% and reduced manual effort by approximately 50% through ETL and automation improvements.</li>
+                  <li>Built Power BI dashboards and worked with cross-functional teams to align reporting with business needs.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="role-stack">
+            <div class="role-stack-label">Expanded responsibilities at Redback Operations</div>
+
+            <article class="role">
+              <div class="role-meta">
+                <img src="assets/redback%20operations.png" alt="Redback Operations logo" class="company-logo logo-square" />
+                <strong>Redback Operations</strong>
+                Melbourne, Victoria<br />
+                Project Lead<br />
+                Jun 2024 — Feb 2025
+              </div>
+              <div>
+                <h3>Project Lead</h3>
+                <ul>
+                  <li>Managed a cross-functional team delivering NLP interfaces and health monitoring system features.</li>
+                  <li>Led sprint planning, task allocation, documentation, and stakeholder communication.</li>
+                  <li>Helped align technical decisions with project objectives through regular reviews and collaborative delivery.</li>
+                  <li>Supported peers with guidance on technical research, documentation, and best practices in data-driven healthcare applications.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role-meta">
+                <img src="assets/redback%20operations.png" alt="Redback Operations logo" class="company-logo logo-square" />
+                <strong>Redback Operations</strong>
+                Melbourne, Victoria<br />
+                Data Science – Team Lead<br />
+                Jun 2024 — Mar 2025
+              </div>
+              <div>
+                <h3>Data Science – Team Lead</h3>
+                <ul>
+                  <li>Built a high-accuracy predictive model using Random Forest, achieving 91% accuracy for Alzheimer’s disease prediction.</li>
+                  <li>Integrated real-time monitoring concepts for scalable healthcare applications supporting 1000+ users.</li>
+                  <li>Engineered and refined predictive features using wearable movement data and accessible medical datasets, improving model performance and diagnostic precision by 15%.</li>
+                  <li>Developed scalable data science solutions with healthcare professionals and data scientists, ensuring practical real-world applicability.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
 
           <article class="role">
             <div class="role-meta">
-              <img src="assets/opal.jpeg" alt="Opal logo" class="company-logo logo-wide" />
-              <strong>Opal</strong>
-              Melbourne, Victoria<br />
-              Data Analyst Intern<br />
-              Oct 2024 — Jan 2025
-            </div>
-            <div>
-              <h3>Data Analyst Intern</h3>
-              <ul>
-                <li>Analysed and processed 10M+ records using Matillion, SAP ERP, QlikView, and Power BI.</li>
-                <li>Improved retrieval speed by approximately 40% and reduced manual effort by approximately 50% through ETL and automation improvements.</li>
-                <li>Built Power BI dashboards and worked with cross-functional teams to align reporting with business needs.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="role">
-            <div class="role-meta">
-              <img src="assets/redback%20operations.png" alt="Redback Operations logo" class="company-logo" />
-              <strong>Redback Operations</strong>
-              Melbourne, Victoria<br />
-              Project Lead<br />
-              Jun 2024 — Feb 2025
-            </div>
-            <div>
-              <h3>Project Lead</h3>
-              <ul>
-                <li>Managed a cross-functional team delivering NLP interfaces and health monitoring system features.</li>
-                <li>Led sprint planning, task allocation, documentation, and stakeholder communication.</li>
-                <li>Helped align technical decisions with project objectives through regular reviews and collaborative delivery.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="role">
-            <div class="role-meta">
-              <img src="assets/daveinfo.jpeg" alt="Dave Infotech logo" class="company-logo" />
+              <img src="assets/daveinfo.jpeg" alt="Dave Infotech logo" class="company-logo logo-square" />
               <strong>Dave Infotech</strong>
               Melbourne, Victoria<br />
-              IT Engineer<br />
+              Information Technology Engineer<br />
               Oct 2023 — Feb 2024
             </div>
             <div>
