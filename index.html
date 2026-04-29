@@ -622,13 +622,13 @@
       display: grid;
       gap: 18px;
       padding-top: 42px;
-      padding-left: 28px;
+      padding-left: 0;
     }
 
     .role-stack-label {
       position: absolute;
       top: 0;
-      left: 28px;
+      left: 0;
       display: inline-flex;
       align-items: center;
       padding: 7px 12px;
@@ -641,15 +641,7 @@
     }
 
     .role-stack::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 82px;
-      bottom: 28px;
-      width: 2px;
-      border-radius: 999px;
-      background: linear-gradient(180deg, rgba(0, 113, 227, 0.28), rgba(0, 113, 227, 0.08));
-      z-index: 0;
+      display: none;
     }
 
     .role-stack .role {
@@ -657,8 +649,17 @@
       z-index: 1;
     }
 
-    .role-stack .role::before {
-      display: none;
+    .role-stack .role + .role::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -18px;
+      width: 2px;
+      height: 18px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(0, 113, 227, 0.26), rgba(0, 113, 227, 0.08));
+      transform: translateX(-50%);
+      z-index: 0;
     }
 
     .role {
